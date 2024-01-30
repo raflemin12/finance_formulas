@@ -21,6 +21,13 @@ def current_ratio(current_assets: float, current_liabilities:float) -> float:
 def debt_ratio(total_liabilities: float, total_assets: float) -> float:
     """
     Amount of assets that go into paying debts.
-    Bigger ratio is considered riskier.
+    In general, bigger ratio is considered riskier.
     """
     return total_liabilities / total_assets
+
+def equity_ratio(total_shareholder_equity: float, total_assets: float, intangible_assets = 0) -> float:
+    """
+    Amount of assets that go to shareholders.
+    In general, want it to be higher than debt ratio
+    """
+    return total_shareholder_equity / (total_assets - intangible_assets)
