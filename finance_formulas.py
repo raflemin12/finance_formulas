@@ -9,5 +9,4 @@ def accounting_equation(assets:float, liabilities:float, shareholder_equity:floa
 
     if not balanced:
         return assets - liabilities - shareholder_equity
-    else:
-        return balanced
+    return balanced
