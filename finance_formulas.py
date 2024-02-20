@@ -31,3 +31,10 @@ def equity_ratio(total_shareholder_equity: float, total_assets: float, intangibl
     In general, want it to be higher than debt ratio
     """
     return total_shareholder_equity / (total_assets - intangible_assets)
+
+def acid_test_ratio(cash: float, short_investments: float, net_acc_receive: float, current_liabilities: float) -> float:
+    """
+    Most liquid assets that go into paying debts.
+    In general, looking for 0.9 - 1.o
+    """
+    return (cash + short_investments + net_acc_receive) / current_liabilities
