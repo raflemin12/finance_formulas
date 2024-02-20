@@ -52,3 +52,18 @@ def days_sales_inventory(inventory_turn: float) -> float:
     Lower is better.
     """
     return 365 / inventory_turn
+
+def acc_receive_turnonver(net_credit_sales:float, avg_net_acc_receive: float) -> float:
+    """
+    Amount of times receivables converted to cash.
+    Measures the efficiency in collecting receivables.
+    Higher ratio is better.
+    """
+    return net_credit_sales / avg_net_acc_receive
+
+def collection_period(acc_receive_turn: float) -> float:
+    """
+    Length of time a business needs to collect accounts receivables.
+    Low average indicates that payments collected faster.
+    """
+    return 365 / acc_receive_turn
