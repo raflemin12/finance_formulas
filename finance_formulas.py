@@ -45,3 +45,10 @@ def inventory_turnover(cogs: float, avg_inventory: float) -> float:
     The higher the better.
     """
     return cogs / avg_inventory
+
+def days_sales_inventory(inventory_turn: float) -> float:
+    """
+    Average number of days it takes to sell off inventory. Measures efficiency of sales.
+    Lower is better.
+    """
+    return 365 / inventory_turn
