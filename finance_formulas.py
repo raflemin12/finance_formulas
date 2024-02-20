@@ -38,3 +38,10 @@ def acid_test_ratio(cash: float, short_investments: float, net_acc_receive: floa
     In general, looking for 0.9 - 1.o
     """
     return (cash + short_investments + net_acc_receive) / current_liabilities
+
+def inventory_turnover(cogs: float, avg_inventory: float) -> float:
+    """
+    The number of times sold through your inventory.
+    The higher the better.
+    """
+    return cogs / avg_inventory
