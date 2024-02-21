@@ -102,3 +102,11 @@ def return_on_equity(net_income: float, preferred_div: float, avg_common_share_e
     Higher ROE is better
     """
     return (net_income - preferred_div) / avg_common_share_equity
+
+def earnings_per_share(net_income: float, preferred_div: float, avg_common_shares_out: float) -> float:
+    """
+    How much money a company makes for each share of its stock.
+    Estimates corporate value.
+    Higher indicates greater value
+    """
+    return (net_income - preferred_div) / avg_common_shares_out
