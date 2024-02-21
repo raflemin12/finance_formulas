@@ -75,3 +75,10 @@ def time_interest_earned(ebit: float, interest_expense: float) -> float:
     Higher ratio is better.
     """
     return ebit / interest_expense
+
+def gross_profit_percent(gross_profit: float, net_sales:float) -> float:
+    """
+    Percentage of revenue kept for each sale after all costs are deducted. 
+    Indicates how successful in generating revenue, whilst keeping the expenses low
+    """
+    return gross_profit / net_sales
