@@ -82,3 +82,10 @@ def gross_profit_percent(gross_profit: float, net_sales:float) -> float:
     Indicates how successful in generating revenue, whilst keeping the expenses low
     """
     return gross_profit / net_sales
+
+def return_on_sales(net_income: float, net_sales:float) -> float:
+    """
+    How efficiently sales are turned into proft.
+
+    """
+    return net_income / net_sales
