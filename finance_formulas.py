@@ -111,9 +111,15 @@ def earnings_per_share(net_income: float, preferred_div: float, avg_common_share
     """
     return (net_income - preferred_div) / avg_common_shares_out
 
-def price_earnings_ratio(share_price: float, earnings_per_share: float) -> float:
+def price_earnings_ratio(share_price: float, earnings_share: float) -> float:
     """
     A high P/E ratio can mean that a stock's price is high relative to earnings and possibly overvalued. 
     A low P/E ratio might indicate that the current stock price is low relative to earnings.
     """
-    return share_price / earnings_per_share
+    return share_price / earnings_share
+
+def dividend_yield(div_per_share: float, share_price: float) -> float:
+    """
+    Percentage of a company’s share price that it pays out in dividends each year.
+    """
+    return div_per_share / share_price
