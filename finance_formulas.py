@@ -95,3 +95,10 @@ def return_on_assets(net_income: float, interest_exp: float, avg_total_assets: f
     Determines if company uses its assets efficiently to generate a profit.
     """
     return (net_income + interest_exp) / avg_total_assets
+
+def return_on_equity(net_income: float, preferred_div: float, avg_common_share_equity: float) -> float:
+    """
+    Efficiency in generating profits.
+    Higher ROE is better
+    """
+    return (net_income - preferred_div) / avg_common_share_equity
