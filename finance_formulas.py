@@ -89,3 +89,9 @@ def return_on_sales(net_income: float, net_sales:float) -> float:
 
     """
     return net_income / net_sales
+
+def return_on_assets(net_income: float, interest_exp: float, avg_total_assets: float) -> float:
+    """
+    Determines if company uses its assets efficiently to generate a profit.
+    """
+    return (net_income + interest_exp) / avg_total_assets
