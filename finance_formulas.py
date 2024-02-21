@@ -21,7 +21,8 @@ def current_ratio(current_assets: float, current_liabilities:float) -> float:
 def debt_ratio(total_liabilities: float, total_assets: float) -> float:
     """
     Amount of assets that go into paying debts.
-    In general, bigger ratio is considered riskier.
+    Ex: debt ratio = 80%. For each $1 owned, company owes $0.80.
+    Lower ratio is generally better.
     """
     return total_liabilities / total_assets
 
