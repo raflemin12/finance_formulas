@@ -68,3 +68,10 @@ def collection_period(acc_receive_turn: float) -> float:
     Low average indicates that payments collected faster.
     """
     return 365 / acc_receive_turn
+
+def time_interest_earned(ebit: float, interest_expense: float) -> float:
+    """
+    Ability to pay debts based on current income.
+    Higher ratio is better.
+    """
+    return ebit / interest_expense
